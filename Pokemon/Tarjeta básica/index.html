@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harol Entrenador Pokemon</title>
+
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            /* Tipo de letra*/
+            background: #0f0f23;
+            /* Color de fondo*/
+            color: #e0e0ff;
+            /* Color de texto*/
+            padding: 2rem;
+            /* Espaciado interno*/
+            text-align: center;
+            /* Centrado del texto*/
+        }
+
+        h1 {
+            color: #ffcc00;
+            /* Color del título*/
+            text-shadow: 0 0 10px #ffcc00;
+            /* Sombra del título*/
+        }
+
+        .equipo {
+            display: flex;
+            /* Acá comienza el diseño*/
+            gap: 1.5rem;
+            /* Espacio entre tarjetas*/
+            justify-content: space-around;
+            /* Centrados horizontalmente*/
+            flex-wrap: wrap;
+            /* Permite que las tarjetas se adapten a la pantalla*/
+            max-width: 1200px;
+            /* Ancho máximo de las tarjetas*/
+            margin: 0 auto;
+            /* Centra las tarjetas en la pantalla*/
+        }
+
+        .pokemon {
+            display: flex;
+            /* Acá comienza el diseño*/
+            flex-direction: column;
+            /* Acá comienza el diseño*/
+            justify-content: space-between;
+            /* Centrados horizontalmente*/
+            background: rgba(255, 255, 255, 0.1);
+            /* Color de fondo semitransparente*/
+            border: 3px solid #ffcc00;
+            /* Borde amarillo*/
+            border-radius: 1rem;
+            /* Bordes redondeados*/
+            padding: 1.5rem;
+            /* Espaciado interno*/
+            flex: 0 0 220px;
+            /* 👈 tamaño fijo real */
+            max-width: 250px;
+            /* Ancho máximo de las tarjetas*/
+            transition: all 0.3s;
+            /* Transición suave*/
+
+        }
+
+        .pokemon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px #ffcc00;
+        }
+
+        .pokemon img {
+            width: 100%;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+
+        .nombre {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 0.8rem 0;
+            color: #ffcc00;
+        }
+
+        .tipo {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: stretch;
+            /* Se alinea verticalmente*/
+            margin-top: 3rem;
+            align-content: space-between;
+        }
+
+        .galeria img {
+            width: 300px;
+            border-radius: 1rem;
+            border: 4px solid #ff00aa;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale (1.08) rotate(3deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Equipo pokemon de Harol (2026 edition)</h1>
+
+    <div class="equipo">
+        <div class="pokemon">
+            <img src="https://img.pokemondb.net/artwork/large/pikachu.jpg" alt="Pikachu">
+            <div class="nombre">Rengu</div>
+            <div class="tipo">Electrico - Nivel 69</div>
+        </div>
+        <div class="pokemon">
+            <img src="https://img.pokemondb.net/artwork/large/gengar.jpg" alt="Gengar">
+            <div class="nombre">Nigth</div>
+            <div class="tipo">Fantasma/veneno - Nivel 420</div>
+        </div>
+        <div class="pokemon">
+            <img src="https://img.pokemondb.net/artwork/large/snorlax.jpg" alt="Snorlax">
+            <div class="nombre">Mort</div>
+            <div class="tipo">Normal - Nivel ∞ (siempre durmiendo)</div>
+        </div>
+        <div class="pokemon">
+            <img src="https://img.pokemondb.net/artwork/large/mewtwo.jpg" alt="Mewtwo">
+            <div class="nombre">Mewtwo</div>
+            <div class="tipo">Psíquico - Nivel over9000</div>
+        </div>
+    </div>
+
+    <h2>Gelería de memes que representa mi vida como junior</h2>
+    <div class="galeria">
+        <img src="https://i.imgflip.com/8j0k2d.jpg" alt="meme debugging">
+        <img src="https://i.imgflip.com/8j0k2e.jpg" alt="meme code works">
+        <img src="https://i.imgflip.com/8j0k2f.jpg" alt="meme stack overflow">
+        <img src="https://i.imgflip.com/8j0k2g.jpg" alt="meme senior vs junior">
+    </div>
+    <footer>
+        <p>© 2026 Harol. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
