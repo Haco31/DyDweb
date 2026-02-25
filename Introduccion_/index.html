@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocode!</title>
+    <style>
+        /* Reset básico para no llorar despues */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f0f23, #1a0033);
+            color: #e0e0ff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            background: linear-gradient(90deg, #00ff9d, #00d4ff, #ff00aa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.6rem;
+            text-shadow: 0 0 20px rgba(0, 255, 157, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0a0ff;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: rgba(10, 10, 35, 0.75);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(0, 255, 157, 0.3);
+            border-radius: 1.8rem;
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 550px;
+            box-shadow: 0 25px 60px rgba(0, 255, 157, 0.35);
+            transition: all 0.4s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 35px 80px rgba(0, 255, 157, 0.35);
+        }
+
+        button {
+            margin-top: 2rem;
+            padding: 1.2rem 3rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #00ff9d, #00d4ff);
+            color: #000814;
+            border: none;
+            border-radius: 999px;
+            /* ovalo perfecto */
+            cursor: pointer;
+            transition: all 0.35s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* centrado extra seguro */
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+            margin-bottom: 1.5rem;
+        }
+
+        button:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 0 50px rgba(0, 255, 157, 0.7);
+        }
+
+        /* Acá empieza lo responsive - mobile first */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: clamp(2.2rem, 10vw, 4rem);
+            }
+
+            .profile-pic {
+                width: 140px;
+                height: 140px;
+            }
+
+            .card {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        .botones {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* se apilan en móvil */
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Harol el destructor de bugs</h1>
+        <p class="tagline">De cero a junior empleable antes de que termine el 2026 (o eso espero)<br>
+            y también por la plata, por que no? jajaja</p>
+    </header>
+
+    <div class="card">
+        <img class="profile-pic" src="Imagenes/hackrat.jpg" alt="Harol modo hacker con hámster sunglasses" />
+
+        <h2>Mi manifiesto como discipulo:</h2>
+        <p>Quiero ser dev web porque pagan bien, me aburro fácil.<br>
+            Además, poder crear cosas desde cero y romperlas sin que nadie me grite es lo más cercano a tener
+            superpoderes.</p>
+    </div>
+
+    <div class="botones">
+        <button onclick="activarModoCrack()">Activar modo crack</button>
+        <button onclick="activarModoNormal()">Volver a la normalidad</button>
+        <button onclick="activarModoMatrix()">Modo matrix</button>
+    </div>
+
+    <script>
+        function activarModoCrack() {
+            alert('Modo crack ACTIVADO!! Ahora mismo estás a 0.01% de ser senior... pero ya superaste el 99% de los que solo miran tutoriales. Sigue rompiendo, bestia.');
+
+            // Generar dos colores hexadecimales aleatorios
+            const color1 = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+            const color2 = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+
+            // Aplicar el nuevo fondo con los colores ramdom
+            document.body.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
+        }
+
+        function activarModoNormal() {
+            alert('Modo normal ACTIVADO!');
+            stopMatrixEffect(); // Detener matrix si está activo
+            document.body.style.background = 'linear-gradient(135deg, #0f0f23, #1a0033)';
+            document.body.style.color = '#e0e0ff';
+            document.body.style.fontFamily = "'Segoe UI', system-ui, sans-serif";
+        }
+
+        let matrixInterval; // Esta Variable guarda el"temporizador" para poder apagarlo después
+
+        function activarModoMatrix() {
+            alert('Modo matrix ACTIVADO! Ahora si te cargo la vr$%$#)/'); // Mensaje de trolleo
+
+            // Estilos Matrix
+            document.body.style.background = 'black';
+            document.body.style.color = '#00ff00';
+            document.body.style.fontFamily = "'Courier New', Courier, monospace";
+
+            startMatrixEffect(); // Inicia la magia, el efecto matrix
+        }
+
+        function startMatrixEffect() {
+            // Crea un <canvas> invisible detrás de todo (si no existe ya)
+            let canvas = document.getElementById('matrixCanvas');
+            if (!canvas) {
+                canvas = document.createElement('canvas');
+                canvas.id = 'matrixCanvas';
+                canvas.style.position = 'fixed'; // fijo en pantalla
+                canvas.style.top = '0';
+                canvas.style.left = '0';
+                canvas.style.width = '100%';
+                canvas.style.height = '100%';
+                canvas.style.zIndex = '-1'; // Detrás del contenido
+                document.body.appendChild(canvas);
+            }
+
+            const ctx = canvas.getContext('2d'); // El "pincel" para dibujar en el canvas
+
+            // Ajustar tamaño del canvas al tamaño de la ventana
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%"; // caraceres que caen
+            const fontSize = 16;
+            const columns = canvas.width / fontSize; // cuantas columnas caben
+
+            const drops = []; // Array que guarda la posición Y actual de cada columna 
+            for (let x = 0; x < columns; x++) {
+                drops[x] = 1; // empiezan casi arriba
+            }
+
+            function draw() { // Esta función se ejecuta ~30 veces por segundo
+                // Fondo semi-transparente negro -> crea el efecto de "rastro" que se desvanece
+                ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                ctx.fillStyle = "#0F0"; // Texto verde matrix
+                ctx.font = fontSize + "px arial";
+
+                for (let i = 0; i < drops.length; i++) {
+                    // Elige un caracter random de la lista
+                    const text = letras[Math.floor(Math.random() * letras.length)];
+                    // Dibuja el caracter en la posición actual
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                    // Si ya cayó muy abajo y sale random -> reinicia desde arriba
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+
+                    drops[i]++; // baja una fila
+                }
+            }
+
+            // Limpia el intervalo anterior si existía
+            if (matrixInterval) clearInterval(matrixInterval);
+            // Ejecutar draw() cada 33 milisegundos (~30 FPS)
+            matrixInterval = setInterval(draw, 33);
+        }
+
+        function stopMatrixEffect() {
+            if (matrixInterval) clearInterval(matrixInterval); // Para dibujar
+            const canvas = document.getElementById('matrixCanvas');
+            if (canvas) canvas.remove(); // borra el canvas de la pagina
+        }
+    </script>
+</body>
+
+</html>
