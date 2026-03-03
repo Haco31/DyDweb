@@ -75,15 +75,75 @@
                     <legend>Información personal</legend>
                     <div>
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name"
+                            pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="Solo se permiten letras" minlength="3"
+                            maxlength="30" required>
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
                     </div>
                     <div>
+                        <label for="country">País</label>
+                        <select name="country" id="country" required>
+                            <option value="" disabled selected>Seleccione un país</option>
+                            <option value="ARG">Argentina</option>
+                            <option value="BRA">Brasil</option>
+                            <option value="CHI">Chile</option>
+                            <option value="COL">Colombia</option>
+                            <option value="ECU">Ecuador</option>
+                            <option value="PER">Perú</option>
+                            <option value="VEN">Venezuela</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9]{9}"
+                            title="Solo se permiten números" aria-describedby="telHelp" required>
+                        <small id="telHelp">Debe contener al menos 9 digitos numéricos</small>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Método de Pago</legend>
+                            <label for="card">
+                                <input type="radio" id="card" name="payment" value="card" required>
+                                Tarjeta de crédito o Débito
+                            </label>
+                            <label for="transfer">
+                                <input type="radio" id="transfer" name="payment" value="transfer">
+                                Transferencia bancaria
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Intereses</legend>
+                            <label for="dia">
+                                <input type="checkbox" name="interest[]" value="dia">
+                                Consejos del día
+                            </label>
+                            <label for="futuro">
+                                <input type="checkbox" name="interest[]" value="futuro">
+                                Que te depara el futuro
+                            </label>
+                            <label for="comun">
+                                <input type="checkbox" name="interest[]" value="comun">
+                                Frase común
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div>
                         <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                        <textarea name="mensaje" id="mensaje" rows="5" autocomplete="off" minlength="10"
+                            inputmode="text" maxlength="100" placeholder="Cuando hay críticas, es por que piedras trae"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="terminos" required>
+                            Acepto los <a href="/terminos">terminos y condiciones</a>
+                        </label>
                     </div>
                     <div>
                         <button type="submit">Enviar</button>
