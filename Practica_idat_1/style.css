@@ -7,8 +7,9 @@
 body {
     background-color: hsl(30, 54%, 90%);
     font-family: 'Outfit', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: hsl(30, 10%, 34%);
+    font-weight: 400;
 }
 
 .card {
@@ -29,16 +30,26 @@ body {
     color: hsl(24, 5%, 18%);
     margin-top: 30px;
     margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 38px;
 }
 
 .card h2 {
     font-family: 'Young Serif', serif;
     color: hsl(14, 45%, 36%);
     margin-bottom: 20px;
+    font-weight: 400;
+
 }
 
 .card section {
     margin-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.card section:last-child {
+    border-bottom: none;
 }
 
 .prep-time {
@@ -60,26 +71,31 @@ body {
 }
 
 .card li {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+    padding-left: 15px;
 }
-
 
 .text {
     margin-bottom: 10px;
 }
 
-.nutrition {
-    position: relative;
-    padding: 12px 0;
+.nutrition-section .nutrition {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
-.salto {
-    border-bottom: 1px solid hsl(30, 18%, 87%);
+.nutrition {
+    position: relative;
+    padding: 12px 35px;
 }
 
 .valor {
     position: absolute;
-    right: 0;
+    right: 250px;
     font-weight: 700;
     color: hsl(14, 45%, 36%);
+}
+
+.card li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
 }
