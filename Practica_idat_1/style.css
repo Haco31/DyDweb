@@ -84,13 +84,20 @@ body {
 }
 
 .nutrition {
-    position: relative;
     padding: 12px 35px;
 }
 
+.nutrition span {
+    display: inline-block;
+}
+
+.nutrition span:first-child {
+    width: 50%;
+}
+
 .valor {
-    position: absolute;
-    right: 250px;
+    width: 50%;
+    text-align: left;
     font-weight: 700;
     color: hsl(14, 45%, 36%);
 }
