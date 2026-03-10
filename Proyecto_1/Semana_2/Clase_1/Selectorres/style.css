@@ -1,0 +1,29 @@
+/*------- Selectores -------*/
+/* Selector universal */
+* {
+    background-color: greenyellow;
+    padding: 20px;
+}
+
+/* Selector de etiqueta */
+h1 {
+    color: violet;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+/* Selectores de clase */
+.subtitulo {
+    color: orange;
+}
+
+/* Selectores de id */
+#Selecion1 {
+    background-color: red;
+}
