@@ -1,0 +1,33 @@
+#reseña, #procedimiento, #receta{
+    text-align: center; 
+    margin: 10px;
+}
+
+header{
+    background-color: #df3131;
+    padding: 10px;
+}
+
+#container{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+    border: 1px solid #ccc;
+}
+
+#menu{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px;
+}
+
+#ingredientes, #pasos{
+    text-align: left;
+    margin-left: auto;
+}

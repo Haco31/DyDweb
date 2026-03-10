@@ -1,0 +1,46 @@
+/*  Herencia */
+/* Es la capacidad que tienen algunos elemento de heredar algunas propiedades del sus contenedores */
+.titulo {
+    color: green;
+}
+
+.texto {
+    color: green;
+}
+
+.link {
+    color: inherit; /* hereda el color del padre */
+}
+
+/* Cascada */
+h2 {
+    color: blue;
+}
+h2 {
+    color: violet;
+}
+
+/* Especificidad */
+/* etiqueta = 1
+clase = 10
+id = 100
+inline = 1000
+!important = infinito
+*/
+h3 {
+    color: green;
+}
+.subtitulo {
+    color: blue;
+}
+#subtitulo {
+    color: red;
+}
+
+.inline {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    /* los elementos en linea no tienen medidida, el tamaño determina su contenido */
+    /* El tamaño lo determina su contenido */
+}

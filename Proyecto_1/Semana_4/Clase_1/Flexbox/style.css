@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.conatiner {
+    background-color: yellowgreen;
+    margin: 50px auto;
+    width: 700px;
+    height: 600px;
+
+    display:flex;
+    flex-direction: row; /* horizontal */
+    /* me indica el eje principal */
+
+    /* En el eje princiapl */
+    justify-content: flex-end;
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    /* En el eje secundario */
+}
+
+.caja{
+    background-color: blueviolet;
+    border: 1px solid black;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+}
+
+section {
+    display: felx;
+    gap: 30px;
+}
+
+article {
+    border: 2px solid yellow;
+}
+
+.container2 {
+    background-color: yellowgreen;
+    margin: 50px auto;
+    width: 700px;
+    height: 600px;
+
+    display:flex;
+    flex-direction: column;
+    /* me indica el eje principal */
+
+    /* para la vertical */
+    justify-content: flex-end;
+
+    /* Para la horizontal */
+    align-items: center;
+}

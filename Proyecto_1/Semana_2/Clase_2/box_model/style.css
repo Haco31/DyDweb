@@ -1,0 +1,53 @@
+* {
+    background-color: rgb(90, 90, 90);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bloque {
+    background-color: rgb(243, 210, 166);
+    width: 200px;
+    height: 200px;
+}
+
+.inline { 
+    background-color: rgb(166, 173, 243);
+    width: 200px;
+    height: 200px;
+}
+/*Los elementos de lineas no tienen medidida, el tamaño determina su contenido */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(166, 243, 171);
+    /* margin */
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; */
+    margin: 50px;
+    /* Se aplica 50px a todas las direcciones */
+
+    /* padding */
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.inline1 {
+    background-color: green;
+
+    /* margin */
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    /* a los elementos de linea no se le pueden aplicar margin en la vertical, solo en la horizontal */
+}
+
+.inline2 {
+    background-color: violet;
+}

@@ -1,0 +1,23 @@
+* {
+    background-color: black;
+}
+
+.container-video {
+    width: 300px;
+    height: 600px;
+}
+
+.container-video video {
+    width: 100%;
+    height: auto;
+}
+
+.container-info {
+    color: white
+}
+
+h1 {
+    color: white
+}
+
+

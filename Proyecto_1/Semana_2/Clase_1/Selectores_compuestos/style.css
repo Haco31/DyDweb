@@ -1,0 +1,37 @@
+/* -------- Combinadores -------- */
+/*h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+} */
+
+h1,p {
+    color: red;
+}
+
+/* ---- Cobinadores desendientes ---- */
+.contenedor h2 {
+    color: blue;
+}
+
+.contenedor p {
+    color: green;
+}
+
+/* ---- Cobinadores hijos ---- */
+.caja > p {
+    color: orange;
+}
+
+/* ---- Cobinadores hermanos adyacente ---- */
+h3 + p {
+    color: purple;
+}
+
+/* ---- Combinadores de hermanos generales ---- */
+h3 ~ p {
+    color: pink;
+}
+
