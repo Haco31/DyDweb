@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Ranencio te dará los tips para vivir tranquilo y en paz contigo mismo, aplicando el pinchismo.">
-    <script src="./app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>Ranencio | Consejos de vida y filosofía práctica 2026</title>
 </head>
 
@@ -15,9 +16,9 @@
     <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
 
     <header>
-        <img src="./Imagenes/pepe.png"
+        <img class="img-ranencio" src="./Imagenes/pepe.png"
             alt="Ilustración de Ranencio, el Gurú del Pinchismo, sonriendo con expresión entusiasta">
-        <h1>Ranencio - Gurú del Pinchismo</h1>
+        <h1 class="titulo">Ranencio - Gurú del Pinchismo</h1>
         <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -85,6 +86,14 @@
                         <input type="email" id="email" name="email" autocomplete="email" required>
                     </div>
                     <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirmar Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div>
                         <label for="country">País</label>
                         <select name="country" id="country" required>
                             <option value="" disabled selected>Seleccione un país</option>
@@ -99,8 +108,8 @@
                     </div>
                     <div>
                         <label for="telefono">Telefono</label>
-                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9]{9}"
-                            title="Solo se permiten números" aria-describedby="telHelp" required>
+                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="\d{9}"
+                            title="El teléfono debe tener 9 dígitos" aria-describedby="telHelp" required>
                         <small id="telHelp">Debe contener al menos 9 digitos numéricos</small>
                     </div>
                     <div>
@@ -120,15 +129,15 @@
                         <fieldset>
                             <legend>Intereses</legend>
                             <label for="dia">
-                                <input type="checkbox" name="interest[]" value="dia">
+                                <input type="checkbox" id="dia" name="interest[]" value="dia">
                                 Consejos del día
                             </label>
                             <label for="futuro">
-                                <input type="checkbox" name="interest[]" value="futuro">
+                                <input type="checkbox" id="futuro" name="interest[]" value="futuro">
                                 Que te depara el futuro
                             </label>
                             <label for="comun">
-                                <input type="checkbox" name="interest[]" value="comun">
+                                <input type="checkbox" id="comun" name="interest[]" value="comun">
                                 Frase común
                             </label>
                         </fieldset>
