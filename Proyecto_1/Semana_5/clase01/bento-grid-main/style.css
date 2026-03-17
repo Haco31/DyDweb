@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 0.9;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 460px 460px;
+  gap: 30px;
+}
+
+.left {
+  display: grid;
+  /* grid-template-rows: 460px 460px; */
+  gap: 30px;
+}
+
+.create {
+  background-color: hsl(31, 66%, 93%);
+  padding: 80px 30px;
+}
+
+.create span {
+  color: hsl(256, 67%, 59%);
+  font-style: italic;
+}
+
+.create img {
+  margin-top: 25px;
+}
+
+.write {
+  background-color: hsl(39, 100%, 71%);
+  padding: 30px 20px;
+}
+
+.write img {
+  margin-top: 50px;
+}
+
+.top-right {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.container-top3 {
+}
+
+.social {
+  background-color: hsl(256, 67%, 59%);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.social h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 0.9;
+  width: 400px;
+  margin: auto;
+}
+
+.social .color {
+  color: hsl(39, 100%, 71%);
+}
+
+.social .cursiva {
+  font-style: italic;
+}
+
+.social img {
+  width: 150px;
+  margin-top: 30px;
+}
+
+.social p {
+  font-size: 14px;
+}
+
+.schedule {
+  background-color: hsl(254, 88%, 90%);
+  position: relative;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+
+.schedule img {
+  position: absolute;
+  width: 300px;
+  right: -110px;
+  top: 130px;
+}
+
+.schedule p {
+  margin-top: 350px;
+  font-size: 20px;
+}
+
+.manage {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.manage img {
+  position: absolute;
+  width: 320px;
+}
+
+.manage h2 {
+  margin-top: 100px;
+}
+
+.maintain {
+  background-color: hsl(39, 100%, 71%);
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.maintain img {
+  position: absolute;
+  width: 210px;
+  bottom: -65px;
+}
+
+.bottom-right {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.container-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.porcent {
+  padding: 30px;
+}
+
+.porcent img {
+  width: 170px;
+}
+
+.grow {
+  background-color: hsl(256, 67%, 59%);
+  display: flex;
+  color: white;
+  padding: 30px;
+}
+
+.grow img {
+  width: 200px;
+}
