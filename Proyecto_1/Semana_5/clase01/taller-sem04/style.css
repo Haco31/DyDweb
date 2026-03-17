@@ -10,9 +10,81 @@
   --color-price: #26293a;
   --color-features: #9c9191;
   --color-boton: #fff;
-  background-color: #5175ff;
 }
 
 body {
-  font-family: "Roboto", serif;
+  background-color: #26293a;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 20px;
+}
+
+.plan {
+  background-color: var(--color-boton);
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+}
+
+span {
+  display: block;
+  color: var(--color-price);
+  font-weight: 600;
+  margin: 18px 0;
+  font-size: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--color-price);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+p {
+  color: var(--color-features);
+  margin-bottom: 35px;
+  font-size: 13px;
+}
+ul {
+  list-style: none;
+  color: var(--color-features);
+  margin-bottom: 30px;
+  display: grid;
+  gap: 15px;
+  font-size: 13px;
+}
+
+button {
+  background-color: var(--color-price);
+  color: var(--color-boton);
+  border-radius: 25px;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+article:hover {
+  background-color: rgb(80, 144, 241);
+}
+
+.plan:hover p,
+.plan:hover span,
+.plan:hover h2,
+.plan:hover ul {
+  color: var(--color-boton);
+}
+
+article:hover button {
+  background-color: var(--color-boton);
+  color: var(--color-price);
+  font-weight: 600;
 }
