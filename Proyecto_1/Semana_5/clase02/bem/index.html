@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- BEM -->
+    <!-- Block element modifier  -->
+    <!-- es una metodologia que nnos perite crear un codigo css mas organizado, flexible, moduular y reutilizable -->
+
+    <!-- block -->
+    <!-- un bloque representa una entidad indepoendiennte, esto sifnigfica que exisste por si ismmo y no necesita de otro elemento, puede ser un formulario, un contenedor, un menu, un footer  -->
+    <!-- Si es un menu de navegacion, le das la clase nav o navbar  -->
+    <!-- si es un footer, le pones la clase footer  -->
+    <!-- si es uun header, le pones la clase header -->
+
+    <!-- Element  -->
+    <!-- un elemento representa a los elementos dentro de uun bloque, con esto podemos decir que depende directamente de uun bloque -->
+    <!-- para definir a un elemento, primero llevara el nombre del bloque padre, seguuido de dos guuiones bajos y el nombre del elemento -->
+    <nav class="navbar">
+      <a class="navbar__link" href="#">Inicio</a>
+    </nav>
+    <header class="header">
+      <h1 class="header__title">titulo</h1>
+    </header>
+
+    <!-- Modifier *(modiificador) -->
+    <!-- un modificador representa una alteracion a un bloque o un elemento -->
+    <nav class="navbar">
+      <a class="navbar__link" href="#">Inicio</a>
+      <a class="navbar__link" href="#">Acerca de</a>
+      <a class="navbar__link" href="#">Contaco</a>
+      <a class="navbar__link navbar__link--red" href="#">Boton</a>
+    </nav>
+
+    <div class="card">
+      <img class="card__img" src="" alt="" />
+      <div class="card__text">
+        <p class="card__parrafo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio,
+          temporibus?
+        </p>
+        <h2 class="card__title">titulo</h2>
+        <a class="card__button" href="">Comienza el proyecto</a>
+      </div>
+    </div>
+  </body>
+</html>
