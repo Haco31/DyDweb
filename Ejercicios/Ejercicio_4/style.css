@@ -13,25 +13,24 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 article {
     display: flex;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
+    border-radius: 20px;
+    max-width: 650px;
+    min-height: 460px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.05);
 }
-
 
 .result {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(221, 100%, 96%);
     border-radius: 20px;
+    flex: 1;
 }
-
-
-
-.summary {}
 
 h1 {
     color: hsl(241, 100%, 89%);
@@ -77,9 +76,149 @@ h1 {
     font-size: 15px;
     font-weight: 500;
     opacity: 0.7;
-    margin: 0 50px 50px 50px;
-    width: 220px;
+    margin: 0 50px 20px 50px;
+    min-width: 220px;
     white-space: normal;
     line-height: 1.4;
 
+}
+
+.summary {
+    margin: 0 30px 50px 30px;
+    flex: 1;
+}
+
+.summary h2 {
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+    margin: 35px 0 25px 0;
+    font-weight: 700;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    color: hsl(0, 100%, 67%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    margin-bottom: 20px;
+}
+
+.reaction img {
+    margin-right: 10px;
+}
+
+.reaction .text-reaction {
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.reaction .score-reaction {
+    margin-left: auto;
+    font-weight: 800;
+    font-size: 17px;
+    color: hsl(224, 30%, 27%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: hsl(39, 100%, 56%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    margin-bottom: 20px;
+}
+
+.memory img {
+    margin-right: 10px;
+}
+
+.memory .text-memory {
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.memory .score-memory {
+    margin-left: auto;
+    font-weight: 800;
+    font-size: 17px;
+    color: hsl(224, 30%, 27%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: hsl(166, 100%, 37%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    margin-bottom: 20px;
+}
+
+.verbal img {
+    margin-right: 10px;
+}
+
+.verbal .text-verbal {
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.verbal .score-verbal {
+    margin-left: auto;
+    font-weight: 800;
+    font-size: 17px;
+    color: hsl(224, 30%, 27%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: hsl(234, 85%, 45%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    margin-bottom: 20px;
+}
+
+.visual img {
+    margin-right: 10px;
+}
+
+.visual .text-visual {
+    margin-right: 30px;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.visual .score-visual {
+    margin-left: auto;
+    font-weight: 800;
+    font-size: 17px;
+    color: hsl(224, 30%, 27%);
+}
+
+button {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    border-radius: 40px;
+    padding: 15px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+@media (max-width: 768px) {
+    article {
+        flex-direction: column;
+    }
 }
