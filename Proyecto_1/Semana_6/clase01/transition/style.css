@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boton {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  display: block;
+  margin: 100px auto;
+  width: 400px;
+  padding: 80px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: 10px solid blue;
+
+  /* transition */
+  /* se ejecuta cuando ocurre un cambio (ejm :hover, :focus, js, etc) */
+  /* transition: propiedad duracion timing-function delay; */
+
+  /* ejm01 */
+  /* transition: border 2s; */
+
+  /* ejm02 */
+  transition: all 2s;
+  /* all: quiero una transicion de todas las propiedades css */
+
+  /* ejm03 */
+  /* transition:
+    border 500ms,
+    background-color 5s,
+    border-radius 2s; */
+
+  /* timing-function: controla la velocisdad de lla animacion */
+  /* no cambia cuanto dura, es como se reparte la velocidad dentro de ese tiempo */
+  /* Tipos: */
+  /* linear -> velocidad constante
+      ease -> empieza lento, acelera en el medio y termina lento
+      ease-in -> empieza lento y termina rapido
+      ease-out -> empieza rapido y temrina lento
+        */
+
+  transition: all 5s ease-out;
+}
+
+/* ejm01 */
+/* .boton:hover {
+  border: 25px solid red;
+} */
+
+/* ejm02 */
+.boton:hover {
+  border: 25px solid red;
+  border-radius: 20px;
+  background-color: orange;
+}

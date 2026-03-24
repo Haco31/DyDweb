@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form>
+      <div>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" placeholder="Ingresar nombre" />
+      </div>
+      <br />
+      <div>
+        <label for="lastname">Apellido</label>
+        <input type="text" id="lastname" placeholder="Ingresar apellido" />
+      </div>
+      <br />
+      <div>
+        <label for="descripcion">Descripcion</label>
+        <textarea name="" id=""></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="email">Correo</label>
+        <input type="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Contrasenha</label>
+        <input type="password" id="password" />
+      </div>
+      <br />
+      <div>
+        Radio:
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="hombre" name="genero" value="hombre" />
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="mujer" name="genero" value="mujer" />
+      </div>
+      <br />
+      <label for="">Select</label>
+      <select>
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="otro">Otro</option>
+      </select>
+      <br />
+      <div>
+        <h4>Checkbox</h4>
+        <p>Que lenguajes de progracion prefieres?</p>
+        <label for="">
+          Javascript
+          <input type="checkbox" />
+        </label>
+        <label for="">
+          Python
+          <input type="checkbox" />
+        </label>
+        <label for="">
+          Java
+          <input type="checkbox" />
+        </label>
+        <label for="">
+          Ruby
+          <input type="checkbox" />
+        </label>
+      </div>
+      <br />
+      <div>
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" />
+      </div>
+      <br />
+      <div>
+        <label for="">Fichero</label>
+        <input type="file" />
+      </div>
+      <br />
+      <div>
+        <label for="">Numero</label>
+        <input type="number" />
+      </div>
+      <br />
+      <div>
+        <label for="">Hora</label>
+        <input type="time" />
+      </div>
+      <br />
+      <div>
+        <label for="">Lista de datos</label>
+        <input list="frutas" placeholder="Ingresa una fruta" />
+        <datalist id="frutas">
+          <option value="manzana"></option>
+          <option value="naranja"></option>
+          <option value="cereza"></option>
+          <option value="sandia"></option>
+          <option value="pera"></option>
+        </datalist>
+      </div>
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

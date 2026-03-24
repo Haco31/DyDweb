@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 150px;
+}
+
+.container {
+  display: flex;
+  gap: 200px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  display: grid;
+  place-items: center;
+
+  transition: transform 1s ease;
+}
+
+.move:hover {
+  transform: translateX(150px);
+  /* cuando es positivo se desplaza a la derecha */
+  /* cuando es negativo se desplaza a la izquierda */
+}
+
+.scale:hover {
+  transform: scale(1.3);
+  /* aumenta su tamanho uun 30% */
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+  /* si es positivo gira en sentido horario */
+  /* si es negativo gira en sentido antihorario */
+}
+
+.skew:hover {
+  transform: skew(25deg);
+  /* inclina el elemento en ell eje X, creando uun efecto de paralelogramo */
+  /* se inclina para la izquiera en referencia al vertice de arriba */
+}
+
+.combo:hover {
+  transform: translateY(-50px) scale(1.3) rotate(15deg);
+  /* translateY(-50px) cuando es negativo sube 
+  translateY(50px) cuando es positivo baja
+  */
+}
