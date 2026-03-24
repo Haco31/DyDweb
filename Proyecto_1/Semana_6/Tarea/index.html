@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+    <form>
+        <h1>Formulario de contacto</h1>
+        <div class="input-group">
+            <label for="name">Nombre*</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Escribe tu Teléfono">
+            <label for="web">Sitio Web</label>
+            <input type="text" id="web" name="web" placeholder="Escribe la URL de tu web">
+            <label for="asunto">Asunto*</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
+            <label for="mensaje">Mensaje*</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
+            <button type="submit">ENVIAR</button>
+        </div>
+        <footer>* los campos son obligatorios.</footer>
+    </form>
+</body>
+
+</html>
