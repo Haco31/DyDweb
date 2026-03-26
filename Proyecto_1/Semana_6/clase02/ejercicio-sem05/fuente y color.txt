@@ -1,0 +1,12 @@
+Fuente:
+font-family: 'Montserrat', sans-serif;
+
+Colores:
+body: #f2f2f2
+color-principal: #2f80ed;
+color-secundario: #4f4f4f;
+color-gray: #828282;
+box-shadow: 0px 8px 9px -3px rgba(130, 130, 130, 0.84);
+
+Enlace:
+https://genuine-crisp-fe4b35.netlify.app/
