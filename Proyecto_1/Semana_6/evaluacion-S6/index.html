@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>App Delivery</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.svg" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li class="btn-cuenta"><a href="#">Iniciar Sesión</a></li>
+                <li class="btn-cuenta"><a href="#">Crear Cuenta</a></li>
+                <li class="btn-restaurant"><a href="#">Registrar Restaurant</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <form class="hero-form">
+                <h1>Encuentra y Pide comida de tu restaurante favorito</h1>
+                <div class="input-group">
+                    <label for="restaurant">RESTAURANTE</label>
+                    <input type="text" id="restaurant" placeholder="Nombre del restaurante">
+                    <label for="dish">PLATILLO</label>
+                    <input type="text" id="dish" placeholder="Nombre del platillo">
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+            <div class="hero-img">
+                <img src="img/dibujo_repartidor.svg"
+                    alt="imagen caricaturisada de un repartidor y su telefono con una ruta">
+            </div>
+        </section>
+
+        <section class="funcionalidades">
+            <h2>¿Cómo funciona?</h2>
+            <span>tan fácil como 1,2 y 3</span>
+            <div class="pasos">
+                <img src="./img/paso_1.png" alt="tarjeta que demuestra la selección del restaurante">
+                <img src="./img/paso_2.png" alt="tarjeta que demuestra la selección del platillo">
+                <img src="./img/paso_3.png" alt="tarjeta que demuestra el envío">
+            </div>
+        </section>
+
+        <section class="testimoniales">
+            <h2>Testimoniales</h2>
+            <ul class="evaluaciones-list">
+                <li class="evaluacion-juan">
+                    <article class="card">
+                        <div class="header">
+                            <figure class="avatar">
+                                <img src="./img/testimonial1.jpg" alt="Foto de Juan Perez">
+                            </figure>
+                            <div class="info">
+                                <h3>Juan Perez</h3>
+                                <img class="calificacion1" src="./img/estrellas.png" alt="calificacion 5 estrellas">
+                            </div>
+                        </div>
+                        <p>Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o
+                            efectivo según me convenga</p>
+                    </article>
+                </li>
+                <li class="evaluacion-cynthia">
+                    <article class="card">
+                        <div class="header">
+                            <figure class="avatar">
+                                <img src="./img/testimonial2.jpg" alt="Foto de Cynthia V">
+                            </figure>
+                            <div class="info">
+                                <h3>Cynthia V</h3>
+                                <img class="calificacion1" src="./img/estrellas.png" alt="calificacion 5 estrellas">
+                            </div>
+                        </div>
+                        <p>Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o
+                            efectivo según me convenga</p>
+                    </article>
+                </li>
+                <li class="evaluacion-jose">
+                    <article class="card">
+                        <div class="header">
+                            <figure class="avatar">
+                                <img src="./img/testimonial3.jpg" alt="Foto de Jose Hernandez">
+                            </figure>
+                            <div class="info">
+                                <h3>Jose Hernandez</h3>
+                                <img class="calificacion1" src="./img/estrellas.png" alt="calificacion 5 estrellas">
+                            </div>
+                        </div>
+                        <p>Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o
+                            efectivo según me convenga</p>
+                    </article>
+                </li>
+                <li class="evaluacion-rocio">
+                    <article class="card">
+                        <div class="header">
+                            <figure class="avatar2">
+                                <img src="./img/testimonial4.jpg" alt="Foto de Rocio Rodriguez">
+                            </figure>
+                            <div class="info">
+                                <h3>Rocio Rodriguez</h3>
+                                <img class="calificacion2" src="./img/estrellas.png" alt="calificacion 5 estrellas">
+                            </div>
+                        </div>
+                        <p>Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o
+                            efectivo según me convenga o
+                            efectivo según me convenga</p>
+                    </article>
+                </li>
+                <li class="evaluacion-itzel">
+                    <article class="card">
+                        <div class="header">
+                            <figure class="avatar2">
+                                <img src="./img/testimonial5.jpg" alt="Foto de Itzel Cruz">
+                            </figure>
+                            <div class="info">
+                                <h3>Itzel Cruz</h3>
+                                <img class="calificacion2" src="./img/estrellas.png" alt="calificacion 5 estrellas">
+                            </div>
+                        </div>
+                        <p>Una excelente app, puedo seleccionar de una gran cantidad.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="restaurantes-favoritos">
+            <h2>Restaurantes Favoritos</h2>
+            <div class="restaurantes">
+                <article class="restaurante-card">
+                    <div class="logo">
+                        <figure>
+                            <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                        </figure>
+                    </div>
+                    <div class="info-rest">
+                        <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                        <h3>Green Ensaladas</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+                <article class="restaurante-card">
+                    <figure>
+                        <img src="./img/logo_ensaladas.png" alt="Calificacion 5 estrellas">
+                    </figure>
+                    <img class="score" src="./img/estrellas.png" alt="Logo de restaurante">
+                    <h3>Green Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo assumenda quod libero
+                        saepe
+                        culpa quis quam aliquid dolorem! Amet corporis delectus animi est alias neque ut magni incidunt
+                        ex?</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="gana-dinero">
+            <h2>Gana dinero con AppComida</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facere qui velit quia iusto perferendis
+                nobis nostrum amet iste perspiciatis! Totam enim, repellat explicabo veniam quas quisquam consequuntur
+                architecto iure!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, enim voluptatum? Veniam, temporibus
+                vel, laborum ex non harum debitis ut saepe rerum vitae molestias. Esse itaque consectetur repellat
+                veniam illum?</p>
+            <button>Más Información</button>
+        </section>
+
+        <section class="panel-navegacion">
+            <div class="nosotros">
+                <h2>Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorem. Nesciunt vel dicta, magnam
+                    ab eos, in tenetur impedit omnis, saepe et nihil nisi est repudiandae fugit ex accusantium fuga.</p>
+            </div>
+            <div class="Navegacion">
+                <h2>Navegación</h2>
+                <ul>
+                    <li><a href="#">Enlace 1</a></li>
+                    <li><a href="#">Enlace 2</a></li>
+                    <li><a href="#">Enlace 3</a></li>
+                    <li><a href="#">Enlace 4</a></li>
+                    <li><a href="#">Enlace 5</a></li>
+                    <li><a href="#">Enlace 6</a></li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorem. Nesciunt vel dicta, magnam
+                    ab eos, in tenetur impedit omnis, saepe et nihil nisi est repudiandae fugit ex accusantium fuga.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>App Comida. Todos los derechos Reservados</p>
+    </footer>
+</body>
+
+</html>
