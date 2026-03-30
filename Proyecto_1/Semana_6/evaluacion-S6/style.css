@@ -9,12 +9,6 @@
   margin-inline: auto;
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-} */
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
@@ -405,6 +399,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header .nav-links ul li a {
+    font-size: 10px;
+  }
+  header .logo {
+    min-width: 120px;
+  }
+
   .hero,
   .gana-dinero .info-operacion,
   .panel-navegacion .contenido-navegacion {
@@ -420,12 +421,53 @@ footer {
     font-size: 1.6rem;
   }
 
+  .hero-img img {
+    width: 300px;
+  }
+
   .evaluaciones-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .testimoniales {
     padding: 0;
+  }
+
+  .panel-navegacion {
+    padding: 40px 40px;
+  }
+
+  .panel-navegacion .contenido-navegacion {
+    display: block;
+  }
+
+  .panel-navegacion .contenido-navegacion h2 {
+    margin-bottom: 10px;
+  }
+
+  .panel-navegacion .contenido-navegacion ul {
+    margin-bottom: 20px;
+  }
+
+  .panel-navegacion .contenido-navegacion p {
+    margin-bottom: 20px;
+  }
+
+  .restaurantes-favoritos {
+    padding: 0 50px;
+  }
+
+  .restaurante-card {
+    min-width: auto;
+    min-height: 330px;
+  }
+
+  .gana-dinero h2 {
+    font-size: 1.2rem;
+  }
+
+  .gana-dinero .dinero-img img {
+    width: 350px;
   }
 }
 
