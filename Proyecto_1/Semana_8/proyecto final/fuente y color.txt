@@ -1,0 +1,17 @@
+Colors:
+    --color-black: #000;
+    --color-white: #fff;
+    --color-blue: #037bc0;
+    --color-dark-blue: #005485;
+    --color-green: #8cbc00;
+background-color: #749807;
+
+Fuentes:
+--font-family-text: 'Raleway', sans-serif;
+--font-family-titles: 'Playfair Display', serif;
+
+Enlace del proyecto
+https://radiant-tartufo-965c9b.netlify.app/
+		
+		
+
