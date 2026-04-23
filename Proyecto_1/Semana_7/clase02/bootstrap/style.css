@@ -1,0 +1,18 @@
+.container {
+  background-color: red;
+}
+
+.container-fluid {
+  background-color: orange;
+}
+
+[class^="container"] {
+  /* la ^ va seleccionar todas las clases que comiencen con container */
+  background-color: red;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+[class^="col"] {
+  border: 1px solid white;
+}
