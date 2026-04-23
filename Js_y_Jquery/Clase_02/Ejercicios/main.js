@@ -1,24 +1,30 @@
-// filtrar numero negativos sin usar metodos
-
-let array = [-3, 2, -2, 5, 0];
-// inide      0  1   2  3  4  
-// número de elementos =array.length = 5
+// ejer01
+// filtrar los numeros negativos de un arreglo sin usar metodos.
+let array = [-3, 1, -2, 5, 0, 11];
+// indice     0  1   2  3  4
+// numero de elementos = array.length = 5
 // console.log(array[0])
-let positivos = []
-let negativos = []
+// console.log(array[1])
+// console.log(array[2])
 
-for(let i=0; i<array.length; i++){
-    // i=0
-    if(array[i] > 0){
-        // array[0] = -3
-        // -3 > 0 = false
-        positivos.push(array[i])
-    } else if (array[i] < 0){
-        negativos.push(array[i]);
-    }
-    console.log(positivos)
-    console.log(negativos)
+let positivos = [];
+let negativos = [];
+
+for (let i = 0; i < array.length; i++) {
+  // i=0
+  // i=1
+  if (array[i] > 0) {
+    // array[0] = -3 > 0, X
+    // array[1] = 1 > 0, +
+    positivos.push(array[i]);
+    //
+  } else if (array[i] < 0) {
+    negativos.push(array[i]);
+  }
+  // i++ => i = 1
 }
+// console.log(positivos);
+// console.log(negativos);
 
 // ejer02
 // encontrar el numero maximo de un arreglo
@@ -45,12 +51,12 @@ for (let i = 0; i < numeros.length; i++) {
     maximo = numeros[i];
   }
 }
-console.log(maximo);
+// console.log(maximo);
 
 // ejerc03
 // contar cuantas palabras hay en una cadena de texto.
 let texto = "Hola mundo, ¿como estas? goku";
- 
+
 // console.log(texto[0]);
 // console.log(texto[1]);
 // console.log(texto[2]);
@@ -66,4 +72,3 @@ for (let i = 0; i < texto.length; i++) {
   }
 }
 console.log(contadorPalabras);
-
