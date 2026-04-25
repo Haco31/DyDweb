@@ -171,7 +171,7 @@ console.log(palabraLarga);
 */
 
 //16: Un coleccionista tiene una caja con varias cartas. Algunas cartas están numeradas del 1 al 10, pero hay algunas cartas repetidas. ¿Cuántas cartas únicas tiene en total?
-let cartas = [1, 2, 3, 4, 2, 3, 5, 6, 7, 8, 1, 9, 10, 10];
+/*let cartas = [1, 2, 3, 4, 2, 3, 5, 6, 7, 8, 1, 9, 10, 10];
 let unicas = [];
 
 for (let i = 0; i < cartas.length; i++) {
@@ -187,4 +187,105 @@ for (let i = 0; i < cartas.length; i++) {
         unicas.push(cartas[i]);
     }
 }
-console.log(unicas.length);
+console.log(unicas.length);*/
+
+/*17. Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida, cuánto le costará en función del topping que elija.
+• El helado sin topping cuesta 50 MXN.
+• El topping de oreo cuesta 10 MXN.
+• El topping de KitKat cuesta 15 MXN.
+• El topping de brownie cuesta 20 MXN.
+En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” y a continuación le informará el
+precio del helado sin ningún topping.*/
+/*
+const helado = {
+    nombre: "Helado",
+    precio: 50,
+    toppings: {
+        oreo: 10,
+        kitkat: 15,
+        brownie: 20
+    }
+}
+
+const topping = prompt("Ingrese el topping deseado: \n - oreo: +10 MXN\n - kitkat: +15 MXN\n - brownie: +20 MXN");
+
+if (topping === "oreo") {
+    console.log(`El helado cuesta ${helado.precio + helado.toppings.oreo} MXN`);
+} else if (topping === "kitkat") {
+    console.log(`El helado cuesta ${helado.precio + helado.toppings.kitkat} MXN`);
+} else if (topping === "brownie") {
+    console.log(`El helado cuesta ${helado.precio + helado.toppings.brownie} MXN`);
+}
+else {
+    console.log(`No tenemos este topping, lo sentimos.`);
+    console.log(`El helado cuesta ${helado.precio} MXN`);
+} */
+
+/* 18. Un conocido portal de educación en tecnología está ofreciendo programas para
+aprender a desarrollar aplicaciones. Escribe un programa que le indique a la
+persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción
+elegida.
+El programa educativo contempla 3 diferentes niveles, cada uno con su costo
+mensual:
+• Course: $4999 MXN
+• Carrera $3999 MXN
+• Master: $2999 MXN */
+
+const curso = {
+    course: 4999,
+    carrera: 3999,
+    master: 2999
+}
+
+const nivel = prompt("Ingrese el nivel deseado: \n - course\n - carrera\n - master");
+
+if (nivel === "course") {
+    console.log(`El curso cuesta ${curso.course} MXN`);
+} else if (nivel === "carrera") {
+    console.log(`El curso cuesta ${curso.carrera} MXN`);
+} else if (nivel === "master") {
+    console.log(`El curso cuesta ${curso.master} MXN`);
+}
+else {
+    console.log(`No tenemos este nivel, lo sentimos.`);
+    console.log(`El curso cuesta ${curso} MXN`);
+}
+
+/* Adicionalmente preguntar si cuenta con alguna beca y aplicar el descuento
+correspondiente al precio final.
+• Beca Facebook: 20% de descuento.
+• Beca Google: 15% de descuento.
+• Beca Jesua: 50% de descuento. */
+
+const beca = prompt("Ingrese el tipo de beca: \n - facebook\n - google\n - jesua");
+
+if (beca === "facebook") {
+    console.log(`El curso cuesta ${curso - (curso * 0.2)} MXN`);
+} else if (beca === "google") {
+    console.log(`El curso cuesta ${curso - (curso * 0.15)} MXN`);
+} else if (beca === "jesua") {
+    console.log(`El curso cuesta ${curso - (curso * 0.5)} MXN`);
+}
+else {
+    console.log(`No tenemos esta beca, lo sentimos.`);
+    console.log(`El curso con descuento por beca cuesta${curso.course} MXN`);
+}
+/*Finalmente, además del precio mensual con descuento, indicar al usuario cuánto
+gastaría en total por el curso elegido, tomando en cuenta las siguientes
+duraciones:
+• Course: 2 meses
+• Carrera 6 meses
+• Master: 12 meses*/
+
+if (nivel === "course") {
+    console.log(`El curso cuesta en total ${curso.course * 2} MXN`);
+} else if (nivel === "carrera") {
+    console.log(`El curso cuesta en total ${curso.carrera * 6} MXN`);
+} else if (nivel === "master") {
+    console.log(`El curso cuesta en total ${curso.master * 12} MXN`);
+}
+else {
+    console.log(`No tenemos este nivel, lo sentimos.`);
+    console.log(`El curso cuesta ${curso.course} MXN`);
+}
+
