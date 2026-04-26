@@ -221,16 +221,12 @@ else {
     console.log(`El helado cuesta ${helado.precio} MXN`);
 } */
 
-/* 18. Un conocido portal de educación en tecnología está ofreciendo programas para
-aprender a desarrollar aplicaciones. Escribe un programa que le indique a la
-persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción
-elegida.
-El programa educativo contempla 3 diferentes niveles, cada uno con su costo
-mensual:
+/* 18. Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida. El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual:
+
 • Course: $4999 MXN
 • Carrera $3999 MXN
 • Master: $2999 MXN */
-
+/*
 const curso = {
     course: 4999,
     carrera: 3999,
@@ -240,52 +236,94 @@ const curso = {
 const nivel = prompt("Ingrese el nivel deseado: \n - course\n - carrera\n - master");
 
 if (nivel === "course") {
-    console.log(`El curso cuesta ${curso.course} MXN`);
+    console.log(`El  course cuesta $${curso.course} MXN`);
 } else if (nivel === "carrera") {
-    console.log(`El curso cuesta ${curso.carrera} MXN`);
+    console.log(`La carrera cuesta $${curso.carrera} MXN`);
 } else if (nivel === "master") {
-    console.log(`El curso cuesta ${curso.master} MXN`);
+    console.log(`El master cuesta $${curso.master} MXN`);
 }
+
 else {
     console.log(`No tenemos este nivel, lo sentimos.`);
-    console.log(`El curso cuesta ${curso} MXN`);
 }
 
 /* Adicionalmente preguntar si cuenta con alguna beca y aplicar el descuento
 correspondiente al precio final.
 • Beca Facebook: 20% de descuento.
 • Beca Google: 15% de descuento.
-• Beca Jesua: 50% de descuento. */
+• Beca Jesua: 50% de descuento. 
 
 const beca = prompt("Ingrese el tipo de beca: \n - facebook\n - google\n - jesua");
+let descuento = 0;
 
 if (beca === "facebook") {
-    console.log(`El curso cuesta ${curso - (curso * 0.2)} MXN`);
+    descuento = 0.20;
 } else if (beca === "google") {
-    console.log(`El curso cuesta ${curso - (curso * 0.15)} MXN`);
+    descuento = 0.15;
 } else if (beca === "jesua") {
-    console.log(`El curso cuesta ${curso - (curso * 0.5)} MXN`);
+    descuento = 0.50;
 }
-else {
-    console.log(`No tenemos esta beca, lo sentimos.`);
-    console.log(`El curso con descuento por beca cuesta${curso.course} MXN`);
-}
-/*Finalmente, además del precio mensual con descuento, indicar al usuario cuánto
-gastaría en total por el curso elegido, tomando en cuenta las siguientes
-duraciones:
+
+let precioDescuento = curso[nivel] * (1 - descuento);
+
+console.log(`El nivel cuesta con descuento por beca $${precioDescuento} MXN`);
+
+/*Finalmente, además del precio mensual con descuento, indicar al usuario cuánto gastaría en total por el curso elegido, tomando en cuenta las siguientes duraciones:
+
 • Course: 2 meses
 • Carrera 6 meses
-• Master: 12 meses*/
-
-if (nivel === "course") {
-    console.log(`El curso cuesta en total ${curso.course * 2} MXN`);
-} else if (nivel === "carrera") {
-    console.log(`El curso cuesta en total ${curso.carrera * 6} MXN`);
-} else if (nivel === "master") {
-    console.log(`El curso cuesta en total ${curso.master * 12} MXN`);
-}
-else {
-    console.log(`No tenemos este nivel, lo sentimos.`);
-    console.log(`El curso cuesta ${curso.course} MXN`);
+• Master: 12 meses
+const duracion = {
+    course: 2,
+    carrera: 6,
+    master: 12
 }
 
+console.log(`El costo en total por beca y duracion $${precioDescuento * duracion[nivel]} MXN`);
+*/
+
+//19. Crea un programa que solicite al usuario números, si lo que este introduce es un  número, guardarlo en un arreglo. Para terminar de preguntar al usuario debe ingresar el número 0. Finalmente mostrar la lista de números capturados en  pantalla o en la consola. 
+/*
+let numeros = [];
+let numero = Number(prompt("Ingrese un número:"));
+
+while (numero !== 0) {
+    numeros.push(numero);
+    numero = Number(prompt("Ingrese otro número: si desea terminar de ingresar un número presione 0"));
+}
+console.log(numeros);
+*/
+//20. Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente: Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si es “autobús” 0.5. Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. Considere:  total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos. 
+
+/*
+function calcularTotal() {
+
+    const vehiculo = {
+        coche: 0.20,
+        moto: 0.10,
+        autobus: 0.5
+    }
+
+    let total = 0;
+
+    const tipoVehiculo = prompt("Ingrese el tipo de vehículo: \n - coche \n - moto \n - autobus").toLowerCase();
+    const litros = Number(prompt("Ingrese la cantidad de litros consumidos:"));
+    const kms = Number(prompt("Ingrese la cantidad de kilómetros recorridos:"));
+
+    if (!vehiculo[tipoVehiculo]) {
+        console.log("No tenemos ese tipo de vehículo");
+        return;
+    } else if (isNaN(litros) || isNaN(kms)) {
+        console.log("Por favor, ingrese números válidos");
+        return;
+    } else {
+        total = vehiculo[tipoVehiculo] * kms;
+        if (litros >= 0 && litros <= 100) {
+            total += 5;
+        } else if (litros > 100) {
+            total +=10;
+        }
+        console.log(`El total a pagar es de $${total}`);
+    }
+}
+calcularTotal(); */
