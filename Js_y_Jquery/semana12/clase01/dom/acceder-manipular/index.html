@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Dom</h1>
+    <!-- DOM - Document Object Model-->
+    <!--
+    - Cuando un navegador carga una página web, convierte el código HTML en una estructura de árbol donde cada elemento es un nodo. Este árbol se llama DOM, y permite que los programadores interactúen con la página de manera dinámica. 
+    - El DOM es como un mapa o un modelo de toda la página web (HTML), donde puedes ver y modificar todo lo que está en la página, como los elementos (texto, imágenes, botones, etc.), estilos (colores, tamaños), estructuras (listas, tablas), etc.
+    - El navegador convierte ese HTML en un DOM que puedes modificar con JavaScript.
+    -->
+    <!-- 
+    Podemos visualizar el DOM como un árbol, donde cada elemento de la página es un nodo:
+
+          Documento (root)
+              |
+           <html>
+        ______|______
+       |             |
+     <head>        <body>
+       |          ____|_______
+    <title>     <h1>  <p>  <button>
+    
+    -->
+
+    <!-- document -->
+    <!-- 
+    - En JavaScript, document es un objeto global que representa la página web cargada en el navegador. Es la entrada principal para acceder y manipular el DOM.
+    - El objeto document es el punto de partida para acceder a los elementos del DOM. Los métodos como getElementById(), querySelector(), createElement(), etc., pertenecen al objeto document, por lo que debemos llamarlo antes de usarlos.
+    -->
+
+    <!-- Accediendo al dom -->
+
+    <!-- getElementById -->
+    <!-- <input id="name" type="text" />
+    <p id="texto">parrafo</p> -->
+
+    <!-- getElementsByTagName -->
+    <!-- <a href="#">Link</a>
+    <a href="#">Link 2</a> -->
+
+    <!-- querySelector -->
+    <!-- <a href="#">Link</a>
+    <a class="link1" href="#">Link 1</a>
+    <a id="link2" href="#">Link 2</a> -->
+
+    <!-- querySelectorAll -->
+    <!-- <a href="#">Link</a>
+    <a class="link1" href="#">Link 1</a>
+    <a id="link2" href="#">Link 2</a> -->
+
+    <!-- Manipulando los elementos -->
+
+    <!-- innerHTML -->
+    <!-- <div></div> -->
+
+    <!-- textContent -->
+    <!-- <div id="contenedor"></div> -->
+    <!-- 
+    <ul>
+      <li class="">1</li>
+      <li id="">2</li>
+      <li>3</li>
+    </ul> -->
+
+    <!-- style -->
+    <!-- <div class="estilos"></div> -->
+
+    <!-- setAttribute -->
+    <!-- <div id="contenedor"></div> -->
+
+    <!--  -->
+    <div class="element"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

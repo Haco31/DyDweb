@@ -1,0 +1,28 @@
+div {
+  width: 700px;
+  height: 500px;
+  background-color: green;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.login {
+  display: none;
+}
+
+.menu {
+  /* display: none; */
+  display: block;
+}
+
+.retiro {
+  display: none;
+}
+
+.saldo {
+  display: none;
+}
+
+.deposito {
+  display: none;
+}
